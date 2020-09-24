@@ -181,6 +181,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     XiaomiCustomDoze
 
+# Enable incremental FS feature
+PRODUCT_PROPERTY_OVERRIDES += ro.incremental.enable=1
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_raphael
