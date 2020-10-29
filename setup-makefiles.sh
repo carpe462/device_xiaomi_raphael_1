@@ -21,7 +21,7 @@ set -e
 DEVICE=raphael
 VENDOR=xiaomi
 
-INITIAL_COPYRIGHT_YEAR=2019
+INITIAL_COPYRIGHT_YEAR=2020
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
