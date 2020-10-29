@@ -15,14 +15,14 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/xiaomi/raphael/msmnile.mk)
 
-# Inherit some common YAAP stuff.
-$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
+# Inherit some common syberia stuff.
+$(call inherit-product, vendor/syberia/common.mk)
 
 #Boot Animation
 scr_resolution := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := yaap_raphael
+PRODUCT_NAME := syberia_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi K20 Pro
@@ -33,3 +33,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="raphael"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+SYBERIA_BUILD_TYPE := UNOFFICIAL
