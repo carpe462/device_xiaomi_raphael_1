@@ -38,4 +38,7 @@
     <bool name="config_statusBarBurnInProtection">true</bool>
     <integer name="config_shift_interval">40</integer>
 
+    <!-- FOD icon Background color -->
+    <color name="config_fodColorBackground">#00000000</color>
+
 </resources>
