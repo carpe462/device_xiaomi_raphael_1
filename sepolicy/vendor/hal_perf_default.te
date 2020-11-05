@@ -1,3 +1,5 @@
+type hal_perf_default, sysfs_type, fs_type;
+
 r_dir_file(hal_perf_default, sysfs_thermal)
 allow hal_perf_default sysfs_thermal:file w_file_perms;
 allow hal_perf_default system_server:dir { read search open };
