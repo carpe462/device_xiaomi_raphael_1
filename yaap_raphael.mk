@@ -1,4 +1,4 @@
-# Copyright (C) 2020 EXUI
+# Copyright (C) 2020 YAAP
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,16 +15,21 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/xiaomi/raphael/msmnile.mk)
 
-# Inherit some common ExtendedUI stuff.
-$(call inherit-product, vendor/exui/config/common.mk)
+# Inherit some common YAAP stuff.
+$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
+
+#Boot Animation
+scr_resolution := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := exui_raphael
+PRODUCT_NAME := yaap_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi K20 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME="raphael" \
+    TARGET_DEVICE="raphael"
 
-EXUI_BUILDTYPE := OFFICIAL
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
