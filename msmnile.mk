@@ -354,6 +354,7 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service \
     NfcNci \
+    QuickAccessWallet \
     Tag \
     com.android.nfc_extras
 
