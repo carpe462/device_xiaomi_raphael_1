@@ -560,3 +560,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Use 64-bit dex2oat for better dexopt time.
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat64.enabled=true
+		
+# FOD animations
+TARGET_WANTS_FOD_ANIMATIONS := true
