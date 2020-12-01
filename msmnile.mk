@@ -551,6 +551,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat64.enabled=true
 
+# Dex
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+		SystemUI \
+		SystemUIGoogle
+
 # Updater
 PRODUCT_PACKAGES += \
     Updater
