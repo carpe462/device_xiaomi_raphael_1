@@ -110,9 +110,9 @@ case "$target" in
     echo 0 > /dev/blkio/background/blkio.group_idle
 
     # Set min cpu freq
-    echo 576000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
-    echo 710400 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
-    echo 825600 > /sys/devices/system/cpu/cpu7/cpufreq/scaling_min_freq
+    echo 768000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+    echo 1056000 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
+    echo 1171200 > /sys/devices/system/cpu/cpu7/cpufreq/scaling_min_freq
 
     # Configure governor settings for silver cluster
     echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
