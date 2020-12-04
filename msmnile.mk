@@ -556,9 +556,5 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 		SystemUI \
 		SystemUIGoogle
 
-# Updater
-PRODUCT_PACKAGES += \
-    Updater
-
 # FOD animations
 TARGET_WANTS_FOD_ANIMATIONS := true
