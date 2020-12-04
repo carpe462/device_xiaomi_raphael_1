@@ -98,8 +98,8 @@ case "$target" in
     echo 30 > /proc/sys/kernel/sched_min_task_util_for_colocation
 
     # cpuset parameters
-    echo 0-1 > /dev/cpuset/background/cpus
-    echo 0-2 > /dev/cpuset/system-background/cpus
+    echo 0-3 > /dev/cpuset/background/cpus
+    echo 0-3 > /dev/cpuset/system-background/cpus
     echo 0-3 > /dev/cpuset/restricted/cpus
 
     # Setup final blkio
@@ -119,6 +119,7 @@ case "$target" in
     echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us
     echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us
     echo 1209600 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_freq
+    echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/rtg_boost_freq
     echo 1 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/pl
 
     # Configure governor settings for gold cluster
@@ -126,6 +127,7 @@ case "$target" in
     echo 0 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/up_rate_limit_us
     echo 0 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/down_rate_limit_us
     echo 1612800 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/hispeed_freq
+    echo 0 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/rtg_boost_freq
     echo 1 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/pl
 
     # Configure governor settings for gold+ cluster
@@ -133,6 +135,7 @@ case "$target" in
     echo 0 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/up_rate_limit_us
     echo 0 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/down_rate_limit_us
     echo 1612800 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/hispeed_freq
+    echo 0 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/rtg_boost_freq
     echo 1 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/pl
 
     # configure input boost settings
