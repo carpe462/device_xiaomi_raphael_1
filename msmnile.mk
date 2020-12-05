@@ -555,9 +555,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat64.enabled=true
 
-# Updater
-PRODUCT_PACKAGES += \
-    Updater
-
 # FOD animations
 TARGET_WANTS_FOD_ANIMATIONS := true
